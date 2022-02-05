@@ -7,14 +7,14 @@ public class SimpleControllerTest
 {
     [Theory]
     [InlineData("return-code", 123, "")]
-    [InlineData("return-text", 0, "hello\r\n")]
-    [InlineData("write-text", 0, "hello\r\n")]
+    [InlineData("return-text", 0, "hello")]
+    [InlineData("write-text", 0, "hello")]
     public void ShouldHandleSimpleControllerCommand(string args, int expectedCode, string expectedOutput)
     {
         var (returnCode, output, _) = TestUtils.RunTestProgram<SimpleControllerTest>(args);
 
         Assert.Equal(expectedCode, returnCode);
-        Assert.Equal(expectedOutput, output);
+        TestUtils.AssertOutput(expectedOutput, output);
     }
 
     public class TestController : Controller

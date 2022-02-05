@@ -12,7 +12,7 @@ public class NestedCommandTest
         var (returnCode, output, _) = TestUtils.RunTestProgram<NestedCommandTest>(args);
 
         Assert.Equal(0, returnCode);
-        Assert.Equal("Migration with name test has been created.\r\n", output);
+        TestUtils.AssertOutput("Migration with name test has been created.", output);
     }
 
     [CommandGroup("ef")]

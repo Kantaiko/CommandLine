@@ -8,8 +8,8 @@ namespace Kantaiko.CommandLine.Tests;
 public class ParameterConverterTest
 {
     [Theory]
-    [InlineData("add test@4.2.0", 0, "Package test of version 4.2.0 was added\r\n", "")]
-    [InlineData("add test", 1, null, "Invalid package reference\r\n\r\n")]
+    [InlineData("add test@4.2.0", 0, "Package test of version 4.2.0 was added", "")]
+    [InlineData("add test", 1, null, "Invalid package reference")]
     public void ShouldHandleCommandWithParameterOfCustomType(string args, int code, string? output, string? error)
     {
         var result = TestUtils.RunTestProgram<ParameterConverterTest>(args);

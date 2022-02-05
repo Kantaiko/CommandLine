@@ -43,6 +43,11 @@ internal static class TestUtils
         return new RunResult(returnCode, console.Out.ToString(), console.Error.ToString());
     }
 
+    public static void AssertOutput(string expected, string? actual)
+    {
+        Assert.Equal(expected, actual?.TrimEnd('\r', '\n'));
+    }
+
     public static void AssertRunResult(RunResult runResult, int? expectedCode = 0, string? expectedOutput = null,
         string? expectedError = null)
     {
@@ -53,12 +58,12 @@ internal static class TestUtils
 
         if (expectedOutput is not null)
         {
-            Assert.Equal(expectedOutput, runResult.Output);
+            AssertOutput(expectedOutput, runResult.Output);
         }
 
         if (expectedError is not null)
         {
-            Assert.Equal(expectedError, runResult.Error);
+            AssertOutput(expectedError, runResult.Error);
         }
     }
 }

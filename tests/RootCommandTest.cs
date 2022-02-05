@@ -5,13 +5,13 @@ namespace Kantaiko.CommandLine.Tests;
 public class RootCommandTest
 {
     [Theory]
-    [InlineData("", "global root\r\n")]
-    [InlineData("group", "group root\r\n")]
+    [InlineData("", "global root")]
+    [InlineData("group", "group root")]
     public void ShouldHandleRootCommand(string args, string expectedOutput)
     {
         var result = TestUtils.RunTestProgram<RootCommandTest>(args);
 
-        Assert.Equal(expectedOutput, result.Output);
+        TestUtils.AssertOutput(expectedOutput, result.Output);
     }
 
     [CommandGroup("group")]
