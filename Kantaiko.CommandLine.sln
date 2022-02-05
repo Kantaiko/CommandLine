@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kantaiko.CommandLine", "src\Kantaiko.CommandLine.csproj", "{47915363-DB9E-431B-9781-88166BD38CA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{61846965-0D76-4952-B8E6-B7D097079C2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "examples\HelloWorld\HelloWorld.csproj", "{AD228224-C631-46A5-8192-81DC42C36CF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kantaiko.CommandLine.Tests", "tests\Kantaiko.CommandLine.Tests.csproj", "{DE2DB59D-E4EF-40B3-BC5F-C6BE85B814F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47915363-DB9E-431B-9781-88166BD38CA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47915363-DB9E-431B-9781-88166BD38CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47915363-DB9E-431B-9781-88166BD38CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47915363-DB9E-431B-9781-88166BD38CA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD228224-C631-46A5-8192-81DC42C36CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD228224-C631-46A5-8192-81DC42C36CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD228224-C631-46A5-8192-81DC42C36CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD228224-C631-46A5-8192-81DC42C36CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE2DB59D-E4EF-40B3-BC5F-C6BE85B814F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE2DB59D-E4EF-40B3-BC5F-C6BE85B814F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE2DB59D-E4EF-40B3-BC5F-C6BE85B814F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE2DB59D-E4EF-40B3-BC5F-C6BE85B814F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AD228224-C631-46A5-8192-81DC42C36CF0} = {61846965-0D76-4952-B8E6-B7D097079C2B}
+	EndGlobalSection
+EndGlobal

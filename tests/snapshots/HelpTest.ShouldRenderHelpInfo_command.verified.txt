@@ -1,0 +1,15 @@
+﻿Description:
+  Add a new migration
+
+Usage:
+  test ef migrations add <name> [options]
+
+Arguments:
+  <name>  Name of the migration
+
+Options:
+  -v, --verbose <verbose>
+  -?, -h, --help           Show help and usage information
+
+
+

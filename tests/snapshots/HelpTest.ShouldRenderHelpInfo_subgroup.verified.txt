@@ -1,0 +1,12 @@
+﻿Description:
+  Tools for working with migrations
+
+Usage:
+  test ef migrations [command] [options]
+
+Options:
+  -?, -h, --help  Show help and usage information
+
+Commands:
+  add <name>  Add a new migration
+

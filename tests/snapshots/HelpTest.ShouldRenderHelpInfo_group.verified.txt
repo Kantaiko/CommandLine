@@ -1,0 +1,12 @@
+﻿Description:
+  Tools for Entity Framework Core
+
+Usage:
+  test ef [command] [options]
+
+Options:
+  -?, -h, --help  Show help and usage information
+
+Commands:
+  migrations  Tools for working with migrations
+
