@@ -58,7 +58,7 @@ internal class CommandLineHandlerAccessor
 
         pipelineBuilder.AddHandler(new SetEndpointAndParametersExecutionHandler());
         pipelineBuilder.AddHandler(new ConstructParametersHandler<CommandLineContext>());
-        pipelineBuilder.AddDefaultControllerHandling();
+        pipelineBuilder.AddDefaultControllerHandling(new ServiceHandlerFactory());
 
         var handlers = pipelineBuilder.Build();
 
